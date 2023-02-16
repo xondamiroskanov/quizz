@@ -12,7 +12,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   List<Map<String, dynamic>> answerAndQuestions = [
     {
-      "savol": "Apple ...",
+      "savol": "1 Apple ...",
       "javoblar": [
         {"matn": "Olcha", "togrimi": false},
         {"matn": "Olma", "togrimi": true},
@@ -20,7 +20,7 @@ class _HomePageState extends State<HomePage> {
       ]
     },
     {
-      "savol": "Banana ...",
+      "savol": "2 Banana ...",
       "javoblar": [
         {"matn": "Banan", "togrimi": true},
         {"matn": "Olma", "togrimi": false},
@@ -28,7 +28,7 @@ class _HomePageState extends State<HomePage> {
       ]
     },
     {
-      "savol": "Hello ...",
+      "savol": "3 Hello ...",
       "javoblar": [
         {"matn": "Salom", "togrimi": true},
         {"matn": "Olma", "togrimi": false},
@@ -36,7 +36,7 @@ class _HomePageState extends State<HomePage> {
       ]
     },
     {
-      "savol": "Apricot ...",
+      "savol": "4 Apricot ...",
       "javoblar": [
         {"matn": "Banan", "togrimi": false},
         {"matn": "Olma", "togrimi": false},
@@ -49,7 +49,7 @@ class _HomePageState extends State<HomePage> {
 
   void next(bool togrimi) {
     setState(() {
-      count++;
+      count ++;
       if (togrimi) {
         trueFalse++;
       }
@@ -70,6 +70,7 @@ class _HomePageState extends State<HomePage> {
   void restart(){
     setState((){
       count = 0;
+      trueFalse = 0;
     });
   }
 
@@ -77,7 +78,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           "Quizz",
           style: TextStyle(fontSize: 22),
         ),

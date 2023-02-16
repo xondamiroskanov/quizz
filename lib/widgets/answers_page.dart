@@ -12,12 +12,14 @@ AnswerPage(this.text,this.func,this.questions);
         crossAxisAlignment: CrossAxisAlignment.stretch,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text(
-            "Tarjimasini toping",
-            style: TextStyle(
-                fontSize: 20,
-                color: Colors.black38,
-                fontWeight: FontWeight.w700),
+          Center(
+            child: Text(
+              "Tarjimasini toping",
+              style: TextStyle(
+                  fontSize: 22,
+                  color: Colors.black38,
+                  fontWeight: FontWeight.w700),
+            ),
           ),
           SizedBox(
             height: 24,
